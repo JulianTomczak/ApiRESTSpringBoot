@@ -15,7 +15,7 @@ import jakarta.annotation.PostConstruct;
 
 @Service
 public class JwtService {
-    @Value("${jwt.secret}")
+    @Value("${JWT_SECRET}")
     private String secretKeyString;
 
     private SecretKey secretKey;
