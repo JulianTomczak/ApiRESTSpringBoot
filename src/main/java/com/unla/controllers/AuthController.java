@@ -59,6 +59,7 @@ public class AuthController {
         user.setName(dto.getName());
         user.setMail(dto.getMail());
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
+        user.setRole(User.Role.USER);
         return user;
     }
 }
